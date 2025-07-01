@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#10b981"/>
+  <rect x="50" y="50" width="412" height="412" rx="60" fill="#0f172a"/>
+  <circle cx="256" cy="200" r="80" fill="#ef4444"/>
+  <circle cx="176" cy="280" r="30" fill="#eab308"/>
+  <circle cx="336" cy="280" r="30" fill="#eab308"/>
+  <rect x="150" y="350" width="212" height="40" rx="20" fill="#10b981"/>
+  <text x="256" y="375" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">RoSiStrat</text>
+</svg>
