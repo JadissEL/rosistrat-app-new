@@ -1,0 +1,124 @@
+/* Mobile Browser Optimizations */
+
+/* Smooth scrolling for mobile navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve touch targets */
+@media (max-width: 640px) {
+  button,
+  a,
+  input,
+  select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Prevent zoom on form focus */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Hide browser chrome elements when possible */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.3);
+    border-radius: 2px;
+  }
+
+  /* Optimize card layouts for mobile */
+  .card {
+    border-radius: 12px;
+  }
+
+  /* Better button spacing */
+  .mobile-button-group {
+    gap: 8px;
+  }
+
+  /* Improve text readability */
+  p,
+  span,
+  div {
+    line-height: 1.5;
+  }
+
+  /* Safe area padding for notched devices */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Landscape orientation optimizations */
+@media (max-width: 640px) and (orientation: landscape) {
+  .sticky-nav {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .mobile-header {
+    height: 50px;
+  }
+}
+
+/* Ultra-wide mobile screens */
+@media (max-width: 480px) {
+  .ultra-mobile-text {
+    font-size: 14px;
+  }
+
+  .ultra-mobile-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .crisp-edges {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark mode adjustments for mobile */
+@media (prefers-color-scheme: dark) {
+  /* Improve contrast on mobile screens */
+  .mobile-text {
+    color: rgba(248, 250, 252, 0.95);
+  }
+
+  .mobile-bg {
+    background: rgba(15, 23, 42, 0.98);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
